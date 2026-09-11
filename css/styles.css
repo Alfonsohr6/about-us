@@ -22,12 +22,28 @@ body {
     overflow-x: hidden; 
 }
 
-/* Header Corporativo */
+/* Estilos para el Encabezado con Fondo Institucional */
 .hero-header {
-    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    background: linear-gradient(135deg, rgba(122, 61, 184, 0.85), rgba(173, 102, 239, 0.85)), url('../img/fondo.jpeg');
+    background-size: cover;
+    background-position: center;
     color: #ffffff;
     padding: 4rem 1rem;
     text-align: center;
+}
+
+/* Contenedor y diseño circular del Logo en el encabezado */
+.logo-container {
+    margin-bottom: 1.5rem;
+}
+
+.company-logo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover; /* Asegura que la imagen se ajuste correctamente sin deformarse */
+    border-radius: 50%; /* Convierte la imagen en un círculo perfecto */
+    border: 3px solid rgba(255, 255, 255, 0.8); /* Borde sutil para resaltar sobre el fondo morado */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .company-badge {
@@ -185,6 +201,30 @@ footer {
     padding: 2.5rem 1rem;
     color: #666;
     font-size: 0.9rem;
+    background-color: var(--card-bg);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-address {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.map-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.map-link:hover {
+    text-decoration: underline;
 }
 
 /* Adaptación para Dispositivos Móviles */
