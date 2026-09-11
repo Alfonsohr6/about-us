@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Panamerican Systems - Soluciones tecnológicas a la medida, accesibles y profesionales para PyMEs. Deja que tu página hable por ti.">
+    <title>Panamerican Systems | Soluciones Tecnológicas para PyMEs</title>
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- PapaParse para procesamiento eficiente de Google Sheets CSV -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" defer></script>
+    
+    <!-- Scripts de la Aplicación -->
+    <script src="js/config.js" defer></script>
+    <script src="js/sheets-api.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Corporativo -->
+    <header class="hero-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <span class="company-badge">🚀 Panamerican Systems</span>
+            </div>
+            <h1>Deja que tu página hable por ti.</h1>
+            <p class="subtitle">Tu carta de presentación: sencilla, rápida y 100% tuya.</p>
+            <div class="hero-cta">
+                <a href="#servicios" class="btn-primary">Ver Soluciones</a>
+                <a id="whatsapp-hero-btn" href="#" target="_blank" class="btn-whatsapp-outline">Consulta Gratis por WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <!-- ================= SECCIÓN: QUIÉNES SOMOS / MANIFIESTO ================= -->
+        <section id="quienes-somos" class="card-section">
+            <div class="card">
+                <h2>Quiénes Somos</h2>
+                <p>En <strong>Panamerican Systems</strong> somos un equipo en constante crecimiento, al igual que tú. Conocemos de cerca los retos de emprender y abrirse camino en el mercado. Por eso, no vendemos plantillas ni paquetes cerrados; creamos la herramienta justa que tu negocio necesita para vender más sin complicaciones.</p>
+                <p>Ayudamos a las Pequeñas y Medianas Empresas a dar el gran salto digital con soluciones a la medida, creando esa primera página web que le dice al mundo <em>¡Hola, Mundo!</em>[cite: 6].</p>
+            </div>
+
+            <div class="grid-2-col">
+                <div class="card mission-card">
+                    <h2>🎯 Nuestra Misión</h2>
+                    <p>Crear herramientas tecnológicas a la medida, accesibles y al alcance económico de los dueños de PyMEs. Diseñamos soluciones únicas y 100% suyas que generan ganancias desde los primeros días y cubren las necesidades básicas actuales de cada negocio, evitando gastos innecesarios[cite: 6].</p>
+                </div>
+                <div class="card vision-card">
+                    <h2>🔭 Nuestra Visión</h2>
+                    <p>Convertirnos en el aliado tecnológico definitivo para las PyMEs en su camino al crecimiento global. Aspiramos a digitalizar y automatizar sus procesos mediante software escalable e integraciones prácticas como WhatsApp, APIs de cobro e Inteligencia Artificial aplicada con pinzas[cite: 6].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECCIÓN: POR QUÉ ELEGIRNOS ================= -->
+        <section class="card-section">
+            <div class="card">
+                <h2>¿Por qué elegir Panamerican Systems?</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h3>🚫 Cero plantillas genéricas</h3>
+                        <p>Cada desarrollo se construye desde cero, adaptándose exactamente a lo que tu negocio necesita para vender más sin pagar de más por funciones que no usas[cite: 6].</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>📈 Retorno rápido</h3>
+                        <p>Diseñamos herramientas enfocadas en generar ganancias desde los primeros días, priorizando necesidades reales sobre gastos innecesarios[cite: 6].</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>⚡ Crecimiento escalable</h3>
+                        <p>Tu sistema evoluciona al mismo ritmo que tu empresa, integrando desde WhatsApp y pasarelas de pago hasta IA de forma estratégica[cite: 6].</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>🔑 Autonomía total</h3>
+                        <p>Entregamos soluciones 100% tuyas, sin depender de mensualidades ocultas ni plataformas cerradas que te aten las manos[cite: 6].</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECCIÓN: SERVICIOS / SOLUCIONES ================= -->
+        <section id="servicios" class="card-section">
+            <div class="card">
+                <h2>Soluciones para tu Negocio</h2>
+                <p class="section-desc">Seleccionamos herramientas prácticas orientadas a resultados comerciales directos.</p>
+                <div id="products-container" class="solutions-grid">
+                    <p class="loading-text">Cargando soluciones corporativas...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECCIÓN: PROYECTOS Y PORTAFOLIO ================= -->
+        <section class="card-section">
+            <div class="card">
+                <h2>Casos de Éxito & Proyectos</h2>
+                <div id="projects-container" class="projects-grid">
+                    <p class="loading-text">Cargando portafolio...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECCIÓN: METODOLOGÍA DE TRABAJO ================= -->
+        <section class="card-section">
+            <div class="card">
+                <h2>💡 ¿Cómo trabajamos?</h2>
+                <ol class="steps-list">
+                    <li><strong>1. Cuéntame tu idea:</strong> Me dices qué vende tu negocio y qué te gustaría mejorar.</li>
+                    <li><strong>2. Te propongo la solución ideal:</strong> Te doy 2 o 3 opciones adaptadas a tu presupuesto sin cobros innecesarios.</li>
+                    <li><strong>3. Lo ponemos a funcionar:</strong> Tu negocio tendrá su sitio listo y fácil de usar[cite: 6].</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ================= SECCIÓN: FAQ ================= -->
+        <section class="card-section">
+            <div class="card">
+                <h2>❓ Preguntas Frecuentes (FAQ)</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>¿Necesito saber de programación para usar mi página?</h3>
+                        <p>No, la web queda totalmente configurada y lista para funcionar en el celular de tus clientes[cite: 6].</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Tengo que pagar mensualidades obligatorias?</h3>
+                        <p>No, utilizamos soluciones estáticas eficientes alojadas en servicios gratuitos como GitHub Pages[cite: 6].</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CTA WHATSAPP ================= -->
+        <section class="card-section">
+            <div class="card cta-card">
+                <h3>📲 ¿Listo para dar el salto digital?</h3>
+                <p>Platiquemos sin compromiso sobre lo que tu negocio necesita para crecer.</p>
+                <a id="whatsapp-cta-btn" href="#" target="_blank" class="btn-whatsapp">Iniciar Consulta Gratuita por WhatsApp</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© <span id="currentYear"></span> Panamerican Systems | Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
